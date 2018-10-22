@@ -145,6 +145,8 @@ LOCAL_HEADER_LIBRARIES := \
         libutils_headers \
         libhardware_headers \
 
+LOCAL_HEADER_LIBRARIES := generated_kernel_headers
+
 LOCAL_C_INCLUDES                := $(libmm-venc-inc)
 LOCAL_ADDITIONAL_DEPENDENCIES   := $(libmm-venc-add-dep)
 
@@ -184,6 +186,8 @@ LOCAL_HEADER_LIBRARIES := \
         libnativebase_headers \
         libutils_headers \
         libhardware_headers \
+
+LOCAL_HEADER_LIBRARIES := generated_kernel_headers
 
 LOCAL_C_INCLUDES                := $(libmm-venc-inc)
 LOCAL_ADDITIONAL_DEPENDENCIES   := $(libmm-venc-add-dep)

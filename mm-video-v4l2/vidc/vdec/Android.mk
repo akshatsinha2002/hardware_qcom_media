@@ -145,6 +145,10 @@ LOCAL_SHARED_LIBRARIES  := liblog libcutils libdl libqdutils
 
 LOCAL_SHARED_LIBRARIES  += libqdMetaData libhypv_intercept
 
+LOCAL_HEADER_LIBRARIES := generated_kernel_headers
+
+LOCAL_HEADER_LIBRARIES  += libnativebase_headers
+
 LOCAL_SRC_FILES         := src/frameparser.cpp
 LOCAL_SRC_FILES         += src/h264_utils.cpp
 LOCAL_SRC_FILES         += src/ts_parser.cpp
@@ -175,6 +179,10 @@ LOCAL_HEADER_LIBRARIES := \
         libnativebase_headers \
         libutils_headers \
         libhardware_headers
+
+LOCAL_HEADER_LIBRARIES := generated_kernel_headers
+
+LOCAL_HEADER_LIBRARIES  += libnativebase_headers
 
 LOCAL_C_INCLUDES              += $(libmm-vdec-inc)
 LOCAL_ADDITIONAL_DEPENDENCIES := $(libmm-vdec-add-dep)
